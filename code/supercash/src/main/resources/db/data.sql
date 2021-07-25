@@ -1,0 +1,1 @@
+insert into t_goods (`name`, `qrcode`, `category`) VALUES ('可口可乐', '00000001', 1);
