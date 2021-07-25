@@ -6,4 +6,10 @@
     <select id="selectByQrcode" resultType="com.huaan.supercash.entity.Goods">
         select id, name, qrcode, category from t_goods where qrcode = #{qrcode}
     </select>
+
+    <select id="goodsByPage" resultType="com.huaan.supercash.entity.Goods">
+        select id, name, qrcode, category from t_goods limit #{offset}, #{rows}
+    </select>
+
+
 </mapper>
